@@ -1,6 +1,6 @@
-baseURL = "https://avi.im/blag"
+baseURL = "https://avi.im/opennotes"
 languageCode = "en-us"
-title = "blag"
+title = "opennotes"
 theme = "skyfall"
 
 [permalinks]
@@ -13,6 +13,7 @@ theme = "skyfall"
   githubUsername = "avinassh"
   goatSiteName = "avi"
   rcscout = "a4aabd5087bb19daf083302de1b46650"
+  customCSS = ["css/custom.css"]
 
 [menu]
   [[menu.main]]

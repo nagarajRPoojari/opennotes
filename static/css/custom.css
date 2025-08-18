@@ -1,0 +1,17 @@
+/* Override shell code block background */
+pre[class*="language-shell"],
+pre[class*="language-bash"] {
+    background-color: white !important;
+    color: black !important;
+    /* Optional: add some padding and border for visibility */
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Optional: override inline code in shell blocks */
+code[class*="language-shell"],
+code[class*="language-bash"] {
+    background-color: white !important;
+    color: black !important;
+}
