@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on opennotes</title>
-    <link>https://avi.im/opennotes/tags/</link>
+    <link>https://nagarajrpoojari.github.io/opennotes/tags/</link>
     <description>Recent content in Tags on opennotes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 Aug 2025 11:11:09 +0530</lastBuildDate>
-    <atom:link href="https://avi.im/opennotes/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nagarajrpoojari.github.io/opennotes/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consistent-Hashing</title>
-      <link>https://avi.im/opennotes/tags/consistent-hashing/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/consistent-hashing/</link>
       <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
-      <guid>https://avi.im/opennotes/tags/consistent-hashing/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/consistent-hashing/</guid>
       <description></description>
     </item>
     <item>
       <title>Distributed-Database</title>
-      <link>https://avi.im/opennotes/tags/distributed-database/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/distributed-database/</link>
       <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
-      <guid>https://avi.im/opennotes/tags/distributed-database/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/distributed-database/</guid>
       <description></description>
     </item>
     <item>
       <title>LSM-Tree</title>
-      <link>https://avi.im/opennotes/tags/lsm-tree/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/lsm-tree/</link>
       <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
-      <guid>https://avi.im/opennotes/tags/lsm-tree/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/lsm-tree/</guid>
       <description></description>
     </item>
     <item>
       <title>Replication</title>
-      <link>https://avi.im/opennotes/tags/replication/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/replication/</link>
       <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
-      <guid>https://avi.im/opennotes/tags/replication/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/replication/</guid>
       <description></description>
     </item>
     <item>
       <title>Sharding</title>
-      <link>https://avi.im/opennotes/tags/sharding/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/sharding/</link>
       <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
-      <guid>https://avi.im/opennotes/tags/sharding/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/sharding/</guid>
       <description></description>
     </item>
   </channel>
