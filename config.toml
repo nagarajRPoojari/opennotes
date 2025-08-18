@@ -1,4 +1,4 @@
-baseURL = "https://avi.im/opennotes"
+baseURL = "https://nagarajrpoojari.github.io/opennotes"
 languageCode = "en-us"
 title = "opennotes"
 theme = "skyfall"
@@ -10,8 +10,8 @@ theme = "skyfall"
   unsafe = true
 
 [params]
-  githubUsername = "avinassh"
-  goatSiteName = "avi"
+  githubUsername = "nagarajRPoojari"
+  goatSiteName = "nagarajrpoojari"
   rcscout = "a4aabd5087bb19daf083302de1b46650"
   customCSS = ["css/custom.css"]
 
@@ -29,7 +29,7 @@ theme = "skyfall"
 #  [[menu.main]]
 #  identifier = "resume"
 #  name = "Resume"
-#  url = "https://avi.im/resume.pdf"
+#  url = "https://nagarajrpoojari.github.io/resume.pdf"
 #
 #  [[menu.main]]
 #  identifier = "projects"
