@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mongodb on blag</title>
+    <link>http://localhost:1313/blag/tags/mongodb/</link>
+    <description>Recent content in Mongodb on blag</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 May 2022 18:35:44 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/blag/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MongoDB secondary only index</title>
+      <link>http://localhost:1313/blag/2022/mongo-secondary-index/</link>
+      <pubDate>Sun, 22 May 2022 18:35:44 +0530</pubDate>
+      <guid>http://localhost:1313/blag/2022/mongo-secondary-index/</guid>
+      <description>This short post will show how to add a secondary only index in a MongoDB replica set</description>
+    </item>
+    <item>
+      <title>I ended up adding duplicate records on a unique index in MongoDB</title>
+      <link>http://localhost:1313/blag/2021/mongo-dupes-in-unique-index/</link>
+      <pubDate>Wed, 31 Mar 2021 19:51:35 +0530</pubDate>
+      <guid>http://localhost:1313/blag/2021/mongo-dupes-in-unique-index/</guid>
+      <description>how my curiosity lead me to discover a weird inconsistency with MongoDB where I was able to insert records that conflicted the index constraints</description>
+    </item>
+    <item>
+      <title>Adding An Unique Index On A Large Collection in Mongo DB</title>
+      <link>http://localhost:1313/blag/2021/adding-unique-index-large-collection/</link>
+      <pubDate>Wed, 31 Mar 2021 14:53:12 +0530</pubDate>
+      <guid>http://localhost:1313/blag/2021/adding-unique-index-large-collection/</guid>
+      <description>&lt;p&gt;This is a story of time, replication, and large amount of data.&lt;/p&gt;&#xA;&lt;p&gt;Mongo nice to knows:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Max memory it uses is 500mb for indexing, this value can be changed. For WireTiger cache it is %50 of RAM. But memory didn&amp;rsquo;t get free when the indexing was done.&lt;/li&gt;&#xA;&lt;li&gt;Mongo indexing is single threaded. Adding more CPU doesn&amp;rsquo;t help&lt;/li&gt;&#xA;&lt;li&gt;BG indexing can become FG if it crashes. There is a setting which lets you avoid this&lt;/li&gt;&#xA;&lt;li&gt;When indexing crashes, it doesn&amp;rsquo;t say for which record it crashed.&lt;/li&gt;&#xA;&lt;li&gt;Mongo aggregation group stage, cannot use index&lt;/li&gt;&#xA;&lt;li&gt;pipeline stages have limited memory, 100mb. use allowdiskusage&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;{&#xA;&amp;ldquo;ok&amp;rdquo; : 0,&#xA;&amp;ldquo;errmsg&amp;rdquo; : &amp;ldquo;E11000 duplicate key error collection: default_dobby.messages index: client_id_1_message_id_1 dup key: { : &amp;quot;abhibus&amp;quot;, : &amp;quot;014fa1f1-2a84-4858-ba66-ba5fa7f8a327&amp;quot; }&amp;rdquo;,&#xA;&amp;ldquo;code&amp;rdquo; : 11000,&#xA;&amp;ldquo;codeName&amp;rdquo; : &amp;ldquo;DuplicateKey&amp;rdquo;&#xA;}&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

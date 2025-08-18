@@ -1,0 +1,16 @@
+/* Make all code blocks have a white background */
+.chroma, pre, code {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Optional: make sure individual lines in code blocks are also styled */
+.chroma .line {
+  background-color: white !important;
+}
+
+/* Optional: inline code styling */
+code {
+  background-color: #f5f5f5 !important;
+  color: black;
+}

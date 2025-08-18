@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Consistent-Hashing on opennotes</title>
+    <link>https://avi.im/opennotes/tags/consistent-hashing/</link>
+    <description>Recent content in Consistent-Hashing on opennotes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Aug 2025 11:11:09 +0530</lastBuildDate>
+    <atom:link href="https://avi.im/opennotes/tags/consistent-hashing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consistent Ring Within a Consistent Ring</title>
+      <link>https://avi.im/opennotes/2025/orange/</link>
+      <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
+      <guid>https://avi.im/opennotes/2025/orange/</guid>
+      <description>Exploring OrangeDB&amp;rsquo;s hybrid replication model combining Cassandra&amp;rsquo;s leaderless design and MongoDB&amp;rsquo;s sharded architecture.</description>
+    </item>
+  </channel>
+</rss>

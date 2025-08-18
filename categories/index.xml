@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on opennotes</title>
+    <link>https://avi.im/opennotes/categories/</link>
+    <description>Recent content in Categories on opennotes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Aug 2025 11:11:09 +0530</lastBuildDate>
+    <atom:link href="https://avi.im/opennotes/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Database</title>
+      <link>https://avi.im/opennotes/categories/database/</link>
+      <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
+      <guid>https://avi.im/opennotes/categories/database/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

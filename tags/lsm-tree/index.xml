@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LSM-Tree on opennotes</title>
+    <link>https://avi.im/opennotes/tags/lsm-tree/</link>
+    <description>Recent content in LSM-Tree on opennotes</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Aug 2025 11:11:09 +0530</lastBuildDate>
+    <atom:link href="https://avi.im/opennotes/tags/lsm-tree/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consistent Ring Within a Consistent Ring</title>
+      <link>https://avi.im/opennotes/2025/orange/</link>
+      <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
+      <guid>https://avi.im/opennotes/2025/orange/</guid>
+      <description>Exploring OrangeDB&amp;rsquo;s hybrid replication model combining Cassandra&amp;rsquo;s leaderless design and MongoDB&amp;rsquo;s sharded architecture.</description>
+    </item>
+    <item>
+      <title>Introducing OrangeDB: A Distributed Key-Doc Database</title>
+      <link>https://avi.im/opennotes/2025/orange/</link>
+      <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
+      <guid>https://avi.im/opennotes/2025/orange/</guid>
+      <description>OrangeDB is a key-document distributed database built on top of Parrot, an LSM-based storage engine. Learn how OrangeDB combines ideas from MongoDB and Cassandra for a powerful new system.</description>
+    </item>
+  </channel>
+</rss>

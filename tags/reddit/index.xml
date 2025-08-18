@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reddit on blag</title>
+    <link>http://localhost:1313/blag/tags/reddit/</link>
+    <description>Recent content in Reddit on blag</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Nov 2015 22:20:00 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/blag/tags/reddit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When is my Cake Day?</title>
+      <link>http://localhost:1313/blag/2015/kekday/</link>
+      <pubDate>Fri, 20 Nov 2015 22:20:00 +0530</pubDate>
+      <guid>http://localhost:1313/blag/2015/kekday/</guid>
+      <description>Using &lt;code&gt;praw&lt;/code&gt; and &lt;code&gt;prawoauth2&lt;/code&gt; to find when is my cake day on Reddit.</description>
+    </item>
+  </channel>
+</rss>

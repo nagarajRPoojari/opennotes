@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compiler on blag</title>
+    <link>http://localhost:1313/blag/tags/compiler/</link>
+    <description>Recent content in Compiler on blag</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Dec 2021 20:39:05 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/blag/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recurse Center Day 27: Errlang</title>
+      <link>http://localhost:1313/blag/2021/rc-day-27/</link>
+      <pubDate>Sat, 11 Dec 2021 20:39:05 +0530</pubDate>
+      <guid>http://localhost:1313/blag/2021/rc-day-27/</guid>
+      <description>&lt;p&gt;Previously &amp;ndash; link to my old post&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;the syntax of Rust and Go&lt;/p&gt;&#xA;&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Add a new token&lt;/li&gt;&#xA;&lt;li&gt;Update the parser&lt;/li&gt;&#xA;&lt;li&gt;Update the CST/AST&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;parsing&#34;&gt;Parsing&lt;/h2&gt;&#xA;&lt;p&gt;There are no tests :| and docs are old :|&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Figure out what is the func declaration is called&lt;/li&gt;&#xA;&lt;li&gt;Add an optional Try operator&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;I wanted&lt;/p&gt;&#xA;&lt;h2 id=&#34;goland&#34;&gt;Goland&lt;/h2&gt;&#xA;&lt;p&gt;Set up GOROOT to local!&lt;/p&gt;&#xA;&lt;h2 id=&#34;line-numbers-all-changed&#34;&gt;Line numbers all changed!&lt;/h2&gt;</description>
+    </item>
+    <item>
+      <title>Recurse Center Day 24: Hacking Go compiler to add a new keyword</title>
+      <link>http://localhost:1313/blag/2021/rc-day-24/</link>
+      <pubDate>Wed, 08 Dec 2021 13:03:55 +0530</pubDate>
+      <guid>http://localhost:1313/blag/2021/rc-day-24/</guid>
+      <description>I forked and modified Go compiler to add a new keyword called &lt;code&gt;let&lt;/code&gt;, as alias for &lt;code&gt;var&lt;/code&gt;</description>
+    </item>
+  </channel>
+</rss>
