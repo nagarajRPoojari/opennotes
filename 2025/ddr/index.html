@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/opennotes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=opennotes/livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="generator" content="Hugo 0.148.2">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <meta property="og:url" content="http://localhost:1313/opennotes/2025/ddr/">
+
+  <title>Consistent Ring Within a Consistent Ring - opennotes</title>
+  <meta property="og:title" content="Consistent Ring Within a Consistent Ring - opennotes">
+  <meta property="og:type" content="article">
+  
+  
+  
+  <meta property="og:description" content="Exploring OrangeDB&rsquo;s hybrid replication model combining Cassandra&rsquo;s leaderless design and MongoDB&rsquo;s sharded architecture.">
+  <meta name="description" content="Exploring OrangeDB&rsquo;s hybrid replication model combining Cassandra&rsquo;s leaderless design and MongoDB&rsquo;s sharded architecture.">
+  
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Arvo:400,700">
+  <link rel="stylesheet" href="/opennotes/css/highlight.css">
+  <link rel="stylesheet" href="/opennotes/css/journal.css">
+  <link href="/opennotes/index.xml" rel="alternate" type="application/rss+xml" title="opennotes">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="site-header-nav">
+    <nav class="site-nav">
+      <a href="http://localhost:1313/opennotes/">Index</a>
+    </nav>
+    <div>
+    
+      <span><a href="/opennotes/about">About</a></span>
+    
+      <span><a href="/opennotes/projects">Projects</a></span>
+    
+    </div>
+    </div>
+    
+
+
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">Consistent Ring Within a Consistent Ring</h1>
+      <time class="post-date" datetime="2025-08-22 11:07:22 IST">22 Aug 2025</time>
+    </header>
+
+    <p>Over the past few months, I&rsquo;ve been diving deep into distributed storage internals — and somewhere along the way, <strong>OrangeDB</strong> was born. If you haven&rsquo;t heard of it yet, check <a href="">orange</a>. This journey led me to explore several lesser-known databases that quietly power critical infrastructure in production environments.</p>
+<p>Some highlights:</p>
+<ul>
+<li><strong>Cassandra</strong> — a fully leaderless, highly available system with tunable consistency.</li>
+<li><strong>MongoDB</strong> — a semi-consistent document store with sharding and replica sets.</li>
+<li><strong>LevelDB / RocksDB</strong> — high-performance embedded key-value stores.</li>
+<li><strong>Voldemort / Riak</strong> — early pioneers in distributed key-value stores.</li>
+</ul>
+<h3 id="revisiting-existing-designs">Revisiting Existing Designs</h3>
+<h4 id="cassandra"><strong>Cassandra</strong></h4>
+<p>Cassandra is completely <strong>leaderless</strong> — any node can handle reads or writes. Data is eventually replicated using <strong>gossip</strong>. To ensure consistency, Cassandra uses <strong>tunable quorum reads and writes</strong>:</p>
+<ul>
+<li>For a cluster with <code>n</code> replicas:
+<ul>
+<li>A <strong>write</strong> must be acknowledged by at least <code>w</code> nodes.</li>
+<li>A <strong>read</strong> must be satisfied by <code>r</code> nodes.</li>
+<li>The constraint <code>w + r &gt; n</code> ensures <strong>strong consistency</strong>.</li>
+</ul>
+</li>
+</ul>
+<p>Features like <strong>sloppy quorum</strong>, <strong>hinted handoff</strong>, and <strong>read repair</strong> further enhance availability. However, this design may result in <strong>higher read and write latencies</strong>, especially under quorum settings.</p>
+<h4 id="mongodb-sharded-deployment"><strong>MongoDB Sharded Deployment</strong></h4>
+<p>In a MongoDB sharded cluster:</p>
+<ul>
+<li>The dataset is partitioned across <strong>shards</strong>.</li>
+<li>Each shard is a <strong>replica set</strong> with a single <strong>primary</strong> and multiple <strong>secondaries</strong>.</li>
+<li>All writes go to the <strong>primary</strong> of the relevant shard.</li>
+<li>Reads can be routed to the <strong>primary</strong> or to secondaries depending on the configured read preference.</li>
+</ul>
+<p>This design offers <strong>strong consistency by default</strong> (via the primary) and <strong>lower read latency</strong> in relaxed consistency modes. However, it relies heavily on <strong>leader election (via Raft)</strong>, which introduces complexity (e.g., split-brain handling, election delays, leadership failover).</p>
+<hr>
+<h3 id="enter-orangedb">Enter OrangeDB</h3>
+<div style="text-align: center;">
+  <img src="/opennotes/images/2025/coc.png" alt="zero disk architecture" style="width: 100%;" />
+</div>
+<p>OrangeDB attempts to combine the <strong>best of both worlds</strong>:</p>
+<ul>
+<li>The <strong>scalability and partitioning</strong> of MongoDB’s sharded setup.</li>
+<li>The <strong>leaderless replication</strong> and tunable consistency of Cassandra.</li>
+</ul>
+<p>It introduces:</p>
+<blockquote>
+<h4 id="consistent-ring-within-a-consistent-ring">“Consistent Ring Within a Consistent Ring”</h4></blockquote>
+<ul>
+<li>An <strong>outer ring</strong> of nodes forms the basis for <strong>shard selection</strong> via consistent hashing.</li>
+<li>Each shard contains an <strong>inner ring</strong> of <strong>replica nodes</strong>, also organized using consistent hashing.</li>
+</ul>
+<p>This two-layer ring structure enables <strong>fine-grained control</strong> over placement, replication, and load distribution.</p>
+<hr>
+<h3 id="write-path">Write Path</h3>
+<ol>
+<li>For a key like <code>k=120</code>, OrangeDB hashes the key to determine the target <strong>shard</strong> via the <strong>outer ring</strong>.</li>
+<li>Within that shard, the key is again hashed to select a specific <strong>replica</strong> (let’s say <code>replica-1</code>) in the <strong>inner ring</strong>.</li>
+<li>All writes for that key go to this designated <strong>primary replica</strong> — without any leader election.</li>
+<li>That replica then <strong>asynchronously replicates</strong> the write to its sibling replicas within the shard using <strong>gossip-style replication</strong> (similar to Cassandra).</li>
+</ol>
+<p>This design achieves:</p>
+<ul>
+<li><strong>Write locality</strong> per key.</li>
+<li><strong>Leaderless writes</strong> without the overhead of leader elections.</li>
+<li><strong>Horizontal scalability</strong> by sharding at both levels.</li>
+</ul>
+<hr>
+<h3 id="read-path">Read Path</h3>
+<p>Reads can be performed at <strong>multiple consistency levels</strong> depending on the use case:</p>
+<ul>
+<li>A <strong>read</strong> first determines the target shard and replica (as with writes).</li>
+<li>Based on the configured consistency level, the system will:
+<ul>
+<li>Query <strong>only the primary replica</strong>, or</li>
+<li>Query <strong>a quorum of replicas</strong>, or</li>
+<li>Query <strong>all replicas</strong> and enforce unanimous agreement.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="read-consistency-levels">Read Consistency Levels</h3>
+<p>OrangeDB supports three read modes:</p>
+<h5 id="all"><em><code>all</code></em></h5>
+<ul>
+<li>Queries <strong>all replicas</strong> of a shard.</li>
+<li>Requires <strong>unanimous agreement</strong> on the value.</li>
+<li><strong>Strongest consistency</strong>, but higher latency.</li>
+<li>Fails if any replica is out of sync.</li>
+</ul>
+<h5 id="quorum"><em><code>quorum</code></em></h5>
+<ul>
+<li>Queries all replicas, but only a <strong>majority</strong> need to agree.</li>
+<li>Balances <strong>availability and consistency</strong>.</li>
+<li>Can optionally trigger <strong>read repair</strong> for divergent replicas.</li>
+</ul>
+<h5 id="single"><em><code>single</code></em></h5>
+<ul>
+<li>Reads from the <strong>designated primary replica</strong> only.</li>
+<li>Fastest option, but assumes the primary is <strong>available and up-to-date</strong>.</li>
+<li>Risks <strong>stale reads</strong> or <strong>data loss</strong> if the replica is unavailable.</li>
+</ul>
+<hr>
+<h3 id="what-orangedb-tries-to-solve">What OrangeDB Tries to Solve</h3>
+<h6 id="orangedb-vs-cassandra-simpler-lower-latency-writes">OrangeDB vs Cassandra: Simpler, Lower-Latency Writes</h6>
+<blockquote>
+<p>OrangeDB avoids quorum-based writes by routing each key to a fixed replica, requiring no coordination during writes.</p></blockquote>
+<p><strong>Why it matters:</strong></p>
+<ul>
+<li>Cassandra needs coordination between <code>w</code> replicas (e.g., 2 of 3) for every write.</li>
+<li>OrangeDB writes to a single replica and replicates asynchronously — lower latency, less overhead.</li>
+</ul>
+<p><strong>Trade-off:</strong> Potential for data loss if the primary fails before replication. No immediate durability like Cassandra’s quorum model.</p>
+<hr>
+<h6 id="orangedb-vs-mongodb-no-leader-election-always-writable">OrangeDB vs MongoDB: No Leader Election, Always Writable</h6>
+<blockquote>
+<p>OrangeDB removes the concept of a primary per shard, avoiding Raft-based elections and their downtime.</p></blockquote>
+<p><strong>Why it matters:</strong></p>
+<ul>
+<li>MongoDB pauses writes during primary failover and risks split-brain under partitions.</li>
+<li>OrangeDB uses deterministic key-to-replica mapping — no election, no downtime.</li>
+</ul>
+<p><strong>Trade-off:</strong> Requires smarter client or routing logic to handle failed replicas gracefully.</p>
+<hr>
+<hr>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>OrangeDB started as a personal exploration—an educational project driven by curiosity about how distributed storage systems work under the hood. It’s a playground to experiment with ideas inspired by Cassandra, MongoDB, and others, but rethinking some of their core trade-offs.</p>
+<p>This project is far from production-ready. There are still many unanswered questions around durability, failure handling, and consistency guarantees. But that’s part of the fun—learning by building and seeing what challenges arise.</p>
+<p>If you’ve enjoyed this peek into the inner workings of distributed databases, I hope it sparks your own experiments and deep dives. At the end of the day, OrangeDB is just one step in an ongoing journey to understand and improve how I store and manage data at scale.</p>
+<p>Thanks for reading and sharing the curiosity! ✌️</p>
+
+
+  </article>
+
+<script async data-uid="0576bb9e32" src="https://avin.ck.page/0576bb9e32/index.js"></script>
+
+
+      <footer class="site-footer">
+        <div class="rc-scout" style="margin-right: auto; margin-top: auto; font-size: 0.6rem;"></div>
+        <script async defer src="https://www.recurse-scout.com/loader.js?t=a4aabd5087bb19daf083302de1b46650"></script>
+
+        <span class="person-schema" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="http://localhost:1313/opennotes/">
+          <span itemprop="name"></span>
+
+          <br>
+
+          <a itemprop="sameAs" href="https://github.com/nagarajRPoojari" title="GitHub"><img src="/opennotes/svg/gh.svg" alt="icon name"></a>
+
+          <a itemprop="sameAs" href="/opennotes/index.xml" title="GitHub"><img src="/opennotes/svg/rss.svg" alt="icon name"></a>
+
+          
+
+          
+        </span>
+
+        
+      </footer>
+    </div>
+
+  <script src="/opennotes/js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script data-goatcounter="https://nagarajrpoojari.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  </body>
+</html>
+

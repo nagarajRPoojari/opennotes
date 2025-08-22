@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sharding on opennotes</title>
-    <link>https://nagarajrpoojari.github.io/opennotes/tags/sharding/</link>
+    <link>http://localhost:1313/opennotes/tags/sharding/</link>
     <description>Recent content in Sharding on opennotes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Aug 2025 11:11:09 +0530</lastBuildDate>
-    <atom:link href="https://nagarajrpoojari.github.io/opennotes/tags/sharding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Aug 2025 11:07:22 +0530</lastBuildDate>
+    <atom:link href="http://localhost:1313/opennotes/tags/sharding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consistent Ring Within a Consistent Ring</title>
-      <link>https://nagarajrpoojari.github.io/opennotes/2025/orange/</link>
-      <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
-      <guid>https://nagarajrpoojari.github.io/opennotes/2025/orange/</guid>
+      <link>http://localhost:1313/opennotes/2025/ddr/</link>
+      <pubDate>Fri, 22 Aug 2025 11:07:22 +0530</pubDate>
+      <guid>http://localhost:1313/opennotes/2025/ddr/</guid>
       <description>Exploring OrangeDB&amp;rsquo;s hybrid replication model combining Cassandra&amp;rsquo;s leaderless design and MongoDB&amp;rsquo;s sharded architecture.</description>
     </item>
     <item>
       <title>Introducing OrangeDB: A Distributed Key-Doc Database</title>
-      <link>https://nagarajrpoojari.github.io/opennotes/2025/orange/</link>
+      <link>http://localhost:1313/opennotes/2025/orange/</link>
       <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
-      <guid>https://nagarajrpoojari.github.io/opennotes/2025/orange/</guid>
+      <guid>http://localhost:1313/opennotes/2025/orange/</guid>
       <description>OrangeDB is a key-document distributed database built on top of Parrot, an LSM-based storage engine. Learn how OrangeDB combines ideas from MongoDB and Cassandra for a powerful new system.</description>
     </item>
   </channel>
