@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on opennotes</title>
-    <link>http://localhost:1313/opennotes/tags/</link>
+    <link>https://nagarajrpoojari.github.io/opennotes/tags/</link>
     <description>Recent content in Tags on opennotes</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Aug 2025 11:07:22 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/opennotes/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nagarajrpoojari.github.io/opennotes/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consistent-Hashing</title>
-      <link>http://localhost:1313/opennotes/tags/consistent-hashing/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/consistent-hashing/</link>
       <pubDate>Fri, 22 Aug 2025 11:07:22 +0530</pubDate>
-      <guid>http://localhost:1313/opennotes/tags/consistent-hashing/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/consistent-hashing/</guid>
       <description></description>
     </item>
     <item>
       <title>LSM-Tree</title>
-      <link>http://localhost:1313/opennotes/tags/lsm-tree/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/lsm-tree/</link>
       <pubDate>Fri, 22 Aug 2025 11:07:22 +0530</pubDate>
-      <guid>http://localhost:1313/opennotes/tags/lsm-tree/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/lsm-tree/</guid>
       <description></description>
     </item>
     <item>
       <title>Replication</title>
-      <link>http://localhost:1313/opennotes/tags/replication/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/replication/</link>
       <pubDate>Fri, 22 Aug 2025 11:07:22 +0530</pubDate>
-      <guid>http://localhost:1313/opennotes/tags/replication/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/replication/</guid>
       <description></description>
     </item>
     <item>
       <title>Sharding</title>
-      <link>http://localhost:1313/opennotes/tags/sharding/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/sharding/</link>
       <pubDate>Fri, 22 Aug 2025 11:07:22 +0530</pubDate>
-      <guid>http://localhost:1313/opennotes/tags/sharding/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/sharding/</guid>
       <description></description>
     </item>
     <item>
       <title>Distributed-Database</title>
-      <link>http://localhost:1313/opennotes/tags/distributed-database/</link>
+      <link>https://nagarajrpoojari.github.io/opennotes/tags/distributed-database/</link>
       <pubDate>Sat, 16 Aug 2025 11:11:09 +0530</pubDate>
-      <guid>http://localhost:1313/opennotes/tags/distributed-database/</guid>
+      <guid>https://nagarajrpoojari.github.io/opennotes/tags/distributed-database/</guid>
       <description></description>
     </item>
   </channel>

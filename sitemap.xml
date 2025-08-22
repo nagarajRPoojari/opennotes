@@ -2,49 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/opennotes/2025/ab/</loc>
-    <lastmod>2025-08-22T11:17:35+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/opennotes/</loc>
-    <lastmod>2025-08-22T11:17:35+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/opennotes/posts/</loc>
-    <lastmod>2025-08-22T11:17:35+05:30</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/opennotes/categories/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/categories/</loc>
     <lastmod>2025-08-22T11:07:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/2025/ddr/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/2025/ddr/</loc>
     <lastmod>2025-08-22T11:07:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/tags/consistent-hashing/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/tags/consistent-hashing/</loc>
     <lastmod>2025-08-22T11:07:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/categories/database/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/categories/database/</loc>
     <lastmod>2025-08-22T11:07:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/tags/lsm-tree/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/tags/lsm-tree/</loc>
     <lastmod>2025-08-22T11:07:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/tags/replication/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/</loc>
     <lastmod>2025-08-22T11:07:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/tags/sharding/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/posts/</loc>
     <lastmod>2025-08-22T11:07:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/tags/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/tags/replication/</loc>
     <lastmod>2025-08-22T11:07:22+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/tags/distributed-database/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/tags/sharding/</loc>
+    <lastmod>2025-08-22T11:07:22+05:30</lastmod>
+  </url><url>
+    <loc>https://nagarajrpoojari.github.io/opennotes/tags/</loc>
+    <lastmod>2025-08-22T11:07:22+05:30</lastmod>
+  </url><url>
+    <loc>https://nagarajrpoojari.github.io/opennotes/tags/distributed-database/</loc>
     <lastmod>2025-08-16T11:11:09+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/2025/orange/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/2025/orange/</loc>
     <lastmod>2025-08-16T11:11:09+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/opennotes/about/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/opennotes/now/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/now/</loc>
   </url><url>
-    <loc>http://localhost:1313/opennotes/projects/</loc>
+    <loc>https://nagarajrpoojari.github.io/opennotes/projects/</loc>
   </url>
 </urlset>
