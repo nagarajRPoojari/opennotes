@@ -21,22 +21,7 @@ theme = "skyfall"
   name = "About"
   url = "/about"
 
-  [[menu.main]]
-  identifier = "now"
-  name = "Now"
-  url = "/now"
-
-#  [[menu.main]]
-#  identifier = "resume"
-#  name = "Resume"
-#  url = "https://nagarajrpoojari.github.io/resume.pdf"
-#
-#  [[menu.main]]
-#  identifier = "projects"
-#  name = "Projects"
-#  url = "/projects"
-#
-#  [[menu.main]]
-#  identifier = "subscribe"
-#  name = "Subscribe"
-#  url = "https://tinyletter.com/avi-im"
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects"

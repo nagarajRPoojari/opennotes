@@ -3,43 +3,212 @@ title: "Projects"
 summary: "Some of the projects I have done."
 ---
 
-<i>Are you a database developer? If so, I would love to chat with you. Please say hi!</i>
+##### [Orange](https://github.com/nagarajRPoojari/orange)
 
-I am learning Systems Programming these days. You can find some of my code on my [GitHub](https://github.com/avinassh).
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
 
-<!-- I am always looking to collaborate and work on interesting stuff. Hit me up on [Twitter](http://twitter.com/iavins) or [email](http://scr.im/avii) me.  -->
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      Distributed key-doc database written in go  
+    </p>
+  </div>
 
-## Current Projects
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/orange">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=orange"
+           alt="Orange" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
 
-I am an open source enthusiast and contribute in my free time. Following projects are my current focus:
+##### [Ripple](https://github.com/ripple-mq)
 
-- [CaskDB](https://github.com/avinassh/py-caskdb/)
-- [Fast SQLite Inserts](https://github.com/avinassh/fast-sqlite3-inserts)
-- [fluvio-go](https://github.com/avinassh/fluvio-go)
-- [pastry](https://github.com/avinassh/pastry)
-- [grusto](https://github.com/avinassh/grusto)
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+
+  <div style="flex: 0 1 60%;">
+    <p>
+      Ripple is a high-performance, distributed, in-memory event streaming system written in go.
+    </p>
+  </div>
+
+  <div style="flex: 0 0 auto;">
+    <a href="https://github.com/ripple-mq">
+      <img src="https://avatars.githubusercontent.com/u/204393222?s=400&u=ac3cbfdf353cea3039a95ae6992e035a22c0922c&v=4"
+           alt="Ripple" style="height: 100px; display: block;" />
+    </a>
+  </div>
+</div>
+
+##### [Panda.fs](https://github.com/nanoDFS)
+
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+
+  <div style="flex: 0 1 60%;">
+    <p>
+      A GFS-like distributed file system for scalable and reliable storage.
+    </p>
+  </div>
+
+  <div style="flex: 0 0 auto;">
+    <a href="https://github.com/nanoDFS">
+      <img src="https://avatars.githubusercontent.com/u/200756033?s=400&u=e74dd6df4493181aed135dd9c851d5c4b1ee688e&v=4"
+           alt="Panda.fs" style="height: 100px; display: block;" />
+    </a>
+  </div>
+</div>
+
+##### [Ray tracer from scratch](https://github.com/nagarajRPoojari/Graphics)
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      High level 3D graphics engine using OpenGL
+    </p>
+  </div>
+
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/Graphics">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=Graphics"
+           alt="Graphics" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
+
+##### [x-Linux](https://github.com/nagarajRPoojari/x-Linux)
+
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      Build your own operating system
+    </p>
+  </div>
+
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/x-Linux">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=x-Linux"
+           alt="x-Linux" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
+
+##### [SynapC](https://github.com/nagarajRPoojari/SynapC)
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      Neural network in C
+    </p>
+  </div>
+
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/SynapC">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=SynapC"
+           alt="SynapC" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
 
 
-## Recent Projects
+##### [Devpages](https://github.com/nagarajRPoojari/DevPage)
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
 
-Some of my recent projects which I consider them to be complete and currently on maintainance mode:
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      Instagram for developers
+    </p>
+  </div>
 
-- [PyTorch Flask API](https://github.com/avinassh/pytorch-flask-api) - Quickly lets you bootstrap building a Flask server around PyTorch. It has also has a [sister repo](https://github.com/avinassh/pytorch-flask-api-heroku) for Heroku
-- [CoWin Assist](https://github.com/avinassh/cowin-assist) - Bot to check covid vaccine slot availability on [CoWin site](https://www.cowin.gov.in/home)
-- [haxor](https://github.com/avinassh/haxor) - Unofficial Python wrapper for official Hacker News API
-- [Rockstar](https://github.com/avinassh/rockstar) - Makes you a Rockstar C++ Programmer in 2 minutes
-- [bencode](https://github.com/avinassh/bencode) - [bencode](https://www.bittorrent.org/beps/bep_0003.html) parser written in Go
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/DevPage">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=DevPage"
+           alt="DevPage" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
 
+##### [Quantum Threads](https://github.com/nagarajRPoojari/Quantum-Threads)
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
 
-## Really Old Projects
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      Quantum machine learning using PQC
+    </p>
+  </div>
 
-- [gRPC Errors](https://github.com/avinassh/grpc-errors)
-- [kylo](https://github.com/avinassh/kylo) - Built a really simple FAQ bot using Facebook's Infersent
-- [gob](https://github.com/avinassh/gob) - Dead simple job board using Django
-- [slackipy](https://github.com/avinassh/slackipy) - Automate user invites to your Slack channel
-- [della](https://github.com/avinassh/della) - Della is a Django app for managing Secret Santa/Gift Exchange
-- [Little Finger](https://github.com/avinassh/little-finger) - You gotta check the repo to know more
-- [status](github.com/avinassh/status) - HTTP Status for Humans
-- [Hocus Pocus](https://github.com/avinassh/Hocus-Pocus) — Status bar only OS X app, which shows/hides hidden
-/system files. Written using Swift
-- I have written bunch of bots: [Laozi](https://github.com/avinassh/Laozi), [Reddit GoodReads Bot](https://github.com/avinassh/Reddit-GoodReads-Bot), [prawoauth2](https://github.com/avinassh/prawoauth2)
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/Quantum-Threads">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=Quantum-Threads"
+           alt="Quantum-Threads" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
+
+##### [Video interpolation with AI](https://github.com/nagarajRPoojari/video-interpolation-AI)
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      Increasing quality of low FPS videos with the help of vision transformer 
+    </p>
+  </div>
+
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/video-interpolation-AI">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=video-interpolation-AI"
+           alt="video-interpolation-AI" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
+
+##### [ACII Art](https://github.com/nagarajRPoojari/ASCII-Art)
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      Real time video to ASCII converter for fun
+    </p>
+  </div>
+
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/ASCII-Art">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=ASCII-Art"
+           alt="ASCII-Art" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
+
+##### [Chess.js](https://github.com/nagarajRPoojari/ChessProject)
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      Play chess with your freinds anywhere, anytime
+    </p>
+  </div>
+
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/ChessProject">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=ChessProject"
+           alt="ChessProject" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
+
+##### [Gluon AI](https://github.com/nagarajRPoojari/Gluon-AI)
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+
+  <div style="flex: 6; min-width: 200px;">
+    <p>
+      An Intelligent VS Code extension for automatic code explanation generation.
+    </p>
+  </div>
+
+  <div style="flex: 4; min-width: 350px;">
+    <a href="https://github.com/nagarajRPoojari/Gluon-AI">
+      <img src="https://github-readme-stats.vercel.app/api/pin/?username=nagarajRPoojari&repo=Gluon-AI"
+           alt="Gluon-AI" style="width: 100%; height: auto; display: block;" />
+    </a>
+  </div>
+</div>
+

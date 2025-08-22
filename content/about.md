@@ -26,8 +26,8 @@ Hey there 👋 I'm **Nagaraj Poojari** — deeply interested in **distributed st
 - ☁️
 - Feeling boring, what about Quantum computing?
 - Qiskit & my first quantum entanglement program
-- My first internship & Golang
-- Graphics, OpenGL.
+- Internship & Golang
+- Graphics, OpenGL & a ray tracer.
 - **_2025_**
 - Distributed systems, Database internals..
 - k8s

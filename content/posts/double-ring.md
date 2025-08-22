@@ -53,7 +53,7 @@ OrangeDB attempts to combine the **best of both worlds**:
 - The **scalability and partitioning** of MongoDB’s sharded setup.
 - The **leaderless replication** and tunable consistency of Cassandra.
 
-It introduces a novel architecture:
+It introduces:
 
 > #### “Consistent Ring Within a Consistent Ring”
 
@@ -148,7 +148,7 @@ OrangeDB started as a personal exploration—an educational project driven by cu
 
 This project is far from production-ready. There are still many unanswered questions around durability, failure handling, and consistency guarantees. But that’s part of the fun—learning by building and seeing what challenges arise.
 
-If you’ve enjoyed this peek into the inner workings of distributed databases, I hope it sparks your own experiments and deep dives. At the end of the day, OrangeDB is just one step in an ongoing journey to understand and improve how we store and manage data at scale.
+If you’ve enjoyed this peek into the inner workings of distributed databases, I hope it sparks your own experiments and deep dives. At the end of the day, OrangeDB is just one step in an ongoing journey to understand and improve how I store and manage data at scale.
 
 Thanks for reading and sharing the curiosity! ✌️
 
