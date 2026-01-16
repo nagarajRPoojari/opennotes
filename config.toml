@@ -4,9 +4,8 @@ title = "Open Notes"
 theme = "shibui"
 
 [params]
-[[params.author]]
-name = "Nagaraj"
-
+author = { name = "Nagaraj" }
+description = "Minimal notes"
 
 [[params.social]]
 name = "github"
