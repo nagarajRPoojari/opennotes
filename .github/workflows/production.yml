@@ -1,5 +1,4 @@
 name: production-deploy
-
 on:
   push:
     branches:
@@ -9,23 +8,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # Crucial for the shibui theme
-          fetch-depth: 0         # Needed for Hugo git variables
-
+          submodules: recursive
+          fetch-depth: 0
+      
+      - name: Update submodules
+        run: git submodule update --remote --recursive
+      
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.139.4"
-          extended: true         # Use extended for better theme compatibility
-
+          hugo-version: "latest"
+          extended: true
+      
       - name: Build
         run: hugo --minify
-
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
