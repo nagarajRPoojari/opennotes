@@ -31,9 +31,8 @@ Parrot isn’t just another LSM tree engine. It includes several optimizations a
 - **Zero-Copy Reads**  
   Parrot uses **shared memory mapping (mmap)** to read files. It avoids copying file data to user-space buffers; threads read directly from the kernel page cache, reducing latency and memory usage.
 
-<div style="text-align: center;">
-  <img src="/opennotes/images/2025/lsm2.png" alt="zero disk architecture" style="width: 100%;" />
-</div>
+![Screenshot](lsm2.png)
+
 
 ---
 

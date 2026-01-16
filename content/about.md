@@ -7,7 +7,6 @@ summary: "Some Stuff About Me"
 
 Hey there 👋 I'm **Nagaraj Poojari** — deeply interested in **distributed storage**, **databases**, **Golang**, and all things backend systems.
 
----
 
 # Tech timeline
 - **_2022_**
@@ -26,12 +25,11 @@ Hey there 👋 I'm **Nagaraj Poojari** — deeply interested in **distributed st
 - ☁️
 - Feeling boring, what about Quantum computing?
 - Qiskit & my first quantum entanglement program
-- Internship & Golang
-- Graphics, OpenGL & a ray tracer.
+- My first internship & Golang
+- Graphics, OpenGL.
 - **_2025_**
 - Distributed systems, Database internals..
 - k8s
 - panda.fs, ripple & Orange
----
 
 Thanks for stopping by! If you share similar interests, I’d love to connect or collaborate.

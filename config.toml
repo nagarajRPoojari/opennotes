@@ -1,27 +1,34 @@
-baseURL = "https://nagarajrpoojari.github.io/opennotes"
-languageCode = "en-us"
-title = "opennotes"
-theme = "skyfall"
-
-[permalinks]
-  posts = "/:year/:slug/"
-
-[markup.goldmark.renderer]
-  unsafe = true
+baseURL = "http://localhost:1313/opennotes/"
+languageCode = "en"
+title = "Open Notes"
+theme = "shibui"
 
 [params]
-  githubUsername = "nagarajRPoojari"
-  goatSiteName = "nagarajrpoojari"
-  rcscout = "a4aabd5087bb19daf083302de1b46650"
-  customCSS = ["css/custom.css"]
+author = "Nagaraj"
+description = "Minimal notes"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/"
 
 [menu]
-  [[menu.main]]
-  identifier = "about"
-  name = "About"
-  url = "/about"
 
-[[menu.main]]
-  identifier = "projects"
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+  [[menu.main]]
   name = "Projects"
-  url = "/projects"
+  url = "/projects/"
+  weight = 2
+
+  [[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 2
+
+  [[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3

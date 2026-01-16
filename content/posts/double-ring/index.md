@@ -44,9 +44,7 @@ This design offers **strong consistency by default** (via the primary) and **low
 
 ### Enter OrangeDB
 
-<div style="text-align: center;">
-  <img src="/opennotes/images/2025/coc.png" alt="zero disk architecture" style="width: 100%;" />
-</div>
+![Screenshot](coc-2.png)
 
 OrangeDB attempts to combine the **best of both worlds**:
 
@@ -151,4 +149,3 @@ This project is far from production-ready. There are still many unanswered quest
 If you’ve enjoyed this peek into the inner workings of distributed databases, I hope it sparks your own experiments and deep dives. At the end of the day, OrangeDB is just one step in an ongoing journey to understand and improve how I store and manage data at scale.
 
 Thanks for reading and sharing the curiosity! ✌️
-
