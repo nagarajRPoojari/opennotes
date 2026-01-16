@@ -1,1 +1,46 @@
 /* You can add custom style here */
+:root {
+  /* increase base font size */
+  --font-size-base: 1.15em;     /* e.g., from 1em to 1.1em */
+  --font-size-small: 1em;      /* scale up small text */
+}
+
+
+.timeline {
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: #4e4d4d;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.timeline-content {
+  margin-left: 2rem;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.5rem 0;
+}

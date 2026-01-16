@@ -3,7 +3,9 @@ title: "Consistent Ring Within a Consistent Ring"
 date: "2025-08-16T11:11:09+05:30"
 categories: ["database"]
 tags: ["LSM-tree", "consistent-hashing", "replication", "sharding"]
-slug: "orange"
+slug: "coc"
+draft: false
+type: "posts"
 summary: "Exploring OrangeDB's hybrid replication model combining Cassandra's leaderless design and MongoDB's sharded architecture."
 ---
 

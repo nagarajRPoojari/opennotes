@@ -3,23 +3,15 @@ title: "Projects"
 summary: "Some of the projects I have done."
 ---
 
-## Projects
-
-Some of the projects I have done.
-
-
+### [Picasso](https://github.com/nagarajRPoojari/picasso)
+Programming language for myself. Supports extensibility, 
+concurrency, memory safety, garbage collection & what not.
 
 ### [Orange](https://github.com/nagarajRPoojari/orange)
-
-Distributed key-doc database written in Go.
-
-
+Distributed, cloud-native key-doc database written in Go.
 
 ### [Ripple](https://github.com/ripple-mq)
-
 Ripple is a high-performance, distributed, in-memory event streaming system written in Go.
-
-
 
 ### [Panda.fs](https://github.com/nanoDFS)
 

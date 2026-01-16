@@ -4,6 +4,8 @@ date: "2025-08-16T11:11:09+05:30"
 categories: ["database"]
 tags: ["LSM-tree", "distributed-database", "replication", "sharding"]
 slug: "orange"
+draft: false
+type: "posts"
 summary: "OrangeDB is a key-document distributed database built on top of Parrot, an LSM-based storage engine. Learn how OrangeDB combines ideas from MongoDB and Cassandra for a powerful new system."
 ---
 
