@@ -9,43 +9,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
 
-      - name: install hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.139.4"
+          hugo-version: "0.139.4" # Ensure this matches your local 'hugo version'
+          extended: true          # Most modern themes require the extended version
 
-      - name: clean up
-        run: |
-          if [ -d "public" ]; then
-            rm -rf public
-          fi
-
-      - name: setup
-        id: vars
-        run: |
-          echo "::set-output name=commit_msg::$(git log -1 --pretty=%B)"
-          git worktree add public gh-pages
-
-      - name: build
+      - name: Build
         run: hugo --minify
 
-      - name: commit
-        run: |
-          cd public
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          if [ "`git status -s`" ]
-          then
-            git add --all
-            git commit -am "deployed: ${{ steps.vars.outputs.commit_msg }}"
-          fi     
-
-      - name: deploy
-        run: git push --all
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
