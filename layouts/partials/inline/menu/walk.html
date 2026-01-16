@@ -1,0 +1,19 @@
+{{- $page := .page -}}
+{{- $menuEntries := .menuEntries -}}
+
+{{- range $menuEntries -}}
+  {{- $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) -}}
+  {{- $url := .URL | relLangURL -}}
+  <li{{ if $active }} class="active"{{ end }}>
+    <a href="{{ $url }}"{{ if $active }} aria-current="page"{{ end }}>
+      {{- .Pre -}}
+      <span>{{ .Name }}</span>
+      {{- .Post -}}
+    </a>
+    {{- if .HasChildren -}}
+      <ul>
+        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .Children) -}}
+      </ul>
+    {{- end -}}
+  </li>
+{{- end -}}
